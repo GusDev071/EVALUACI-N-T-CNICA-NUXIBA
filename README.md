@@ -41,8 +41,8 @@ dotnet run --urls http://localhost:5160
 4) Endpoints principales
 - GET http://localhost:5160/logins
 - POST http://localhost:5160/logins
-- PUT http://localhost:5160/logins/{id}
-- DELETE http://localhost:5160/logins/{id}
+- PUT http://localhost:5160/logins/{id} --> el id que toma es logId de del metodo post.
+- DELETE http://localhost:5160/logins/{id} --> el id que toma es logId de del metodo post.
 - GET http://localhost:5160/report/csv
 - GET http://localhost:5160/report/csv/{userId}
 
