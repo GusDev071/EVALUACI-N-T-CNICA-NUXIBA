@@ -1,0 +1,36 @@
+@APITest_HostAddress = http://localhost:5160
+
+### Ejercicio 1: GET logins
+GET {{APITest_HostAddress}}/logins
+Accept: application/json
+
+### Ejercicio 1: POST login (login)
+POST {{APITest_HostAddress}}/logins
+Content-Type: application/json
+
+{
+  "userId": 70,
+  "extension": "-8",
+  "tipoMov": 1,
+  "fecha": "2023-01-05T18:02:44"
+}
+
+### Ejercicio 1: PUT login
+PUT {{APITest_HostAddress}}/logins/1
+Content-Type: application/json
+
+{
+  "userId": 70,
+  "extension": "-8",
+  "tipoMov": 0,
+  "fecha": "2023-01-05T19:02:44"
+}
+
+### Ejercicio 1: DELETE login
+DELETE {{APITest_HostAddress}}/logins/1
+
+### Ejercicio 3: CSV general
+GET {{APITest_HostAddress}}/report/csv
+
+### Ejercicio 3: CSV por usuario
+GET {{APITest_HostAddress}}/report/csv/70
